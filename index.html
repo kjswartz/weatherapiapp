@@ -1,21 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Weather API APP</title>
-  <link rel="stylesheet" href="style.css">
+	<head>
+		<meta charset="utf-8">
+		<title>Weather API App</title>
+		<link href='//fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
+	  <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
+	<body>
+		<section>
+			<h1 id="city">Weather API App</h1>
+			<p><a id="temperature" href="#" onclick="switchUnits(); return false;" title="Click to switch between metric and imperial units"></a><span id="weather">by Kyle | Loading...</span></p>
+		</section>
+		<footer>
+			<p>Powered by <a href="http://flickr.com/services/api/">Flickr</a>, <a href="http://openweathermap.org">Openweathermap.org</a> and <a href="http://ip-api.com/">ip-api.com</a>. Created by <a href="https://twitter.com/kjswartz">@kjswartz04</a>. <a id="image-source" href="#">Image source</a>.</p>
+		</footer>
 
-  <section>
-    <h1 id="city">Weather API APP</h1>
-    <p><a id="tempature" href="#" onclick="switchUnits(); return false;" title="Click to switch between metric and imperial units"></a><span id="weather">By Me</span></p>
-  </section>
+    <script type="text/javascript" src="app.js"></script>
 
-  <footer>
-    <p>Powered by <a href="http://flickr.com/services/api/">Flickr</a> and <a href="http://openweathermap.org">Openweathermap.org</a>. Created by <a href="https://twitter.com/kjswartz04">Kyle</a>. <a id="image-source" href="#">Image source</a></p>
-  </footer>
-
-</body>
+  </body>
 </html>
