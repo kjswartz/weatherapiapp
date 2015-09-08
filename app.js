@@ -111,7 +111,7 @@ function getWeatherForLocation(){
     var xhr = new XMLHttpRequest();
     xhr.addEventListener("load", function() {
       var response = JSON.parse(xhr.responseText);
-
+      console.log('XML Request');
       console.log(response);
       var position = {
         latitude: response.latitude,
@@ -152,6 +152,7 @@ function loadBackground(lat, lon, weatherTag) {
 }
 
 function jsonFlickrApi(data){
+  console.log('Flickr API');
   console.log(data);
   if (data.photos.pages > 0){
     var photo = data.photos.photo[0];
